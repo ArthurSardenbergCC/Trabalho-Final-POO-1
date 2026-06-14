@@ -1,11 +1,14 @@
 a) Descrição do jogo
+
 O jogo “Ilha da Sobrevivência” é uma aventura com escolhas desenvolvido em Java. Seu objetivo é encontrar um meio de sobreviver em uma ilha deserta no Pacífico, após seu veleiro sofrer um naufrágio. Como água é o recurso mais crucial nesse tipo de situação, procure por uma fonte antes de três dias, o qual é o tempo máximo de sobrevivência para uma ilha tropical durante o verão.
 
 b) Como executar
+
 Crie as classes presentes no código fonte em uma IDE (como o IntelliJ) e execute o arquivo “Jogo.java”, o qual possui o método “main”.
 A interface é textual e os comandos são simples, bastando digitar a numeração correspondente ao cenário que quer visitar.
 
 c) Conceitos aplicados
+
 1) Encapsulamento e Ocultação de Informações
 Aplicado por meio de atributos “private” e métodos acessadores e modificadores na classe Jogador e Cena. A razão é proteger o estado interno do jogo contra modificações externas incorretas. Um exemplo são os dias restantes só diminuem sob regras estritas do método “gastarTempo()” da classe Jogador.
 
@@ -36,5 +39,6 @@ Aplicado por meio das classes “BufferedWriter” e “BufferedReader” na per
 Aplicada por meio de comentários estruturados no formato por /**...*/. A justificativa é gerar uma documentação técnica legível e profissional do código para outros desenvolvedores. Os exemplos são o uso das palavras @param, @return e @exception nos métodos.
 
 d) Detalhamento do item criativo
+
 A funcionalidade extra do histórico de finais e dos locais visitados foi adotada para engajar o jogador na busca por 100% de conclusão. Ela foi implementada por meio de um ArrayList que registra os passos da partida e da classe GerenciadorArquivos, que grava os finais em um arquivo. Isso é justificado por oferecer uma experiência do usuário melhor e aplicar os conceitos obrigatórios de Arquivos e uso de Collections coerentemente ao restante do código.
 Por meio do histórico de passos é possível identificar o caminho para cada final e ir eliminado as combinações de cenários até que todos os caminhos sejam percorridos.
